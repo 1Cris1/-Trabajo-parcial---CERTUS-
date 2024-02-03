@@ -512,3 +512,10 @@ padding-left: 1rem;
 	grid-column: 2/4;
 	grid-row: 1/3;
 }
+/*Especiales*/
+.specials {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
