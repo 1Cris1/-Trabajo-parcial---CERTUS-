@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="Estilos de gp.css">
+</head>
+<body>
+    <h1 >Gestor de usuario</h1>
+    <form action="/submit-user-data" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="gender">Genero:</label>
+        <select id="gender" name="gender">
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="other">Otro</option>
+        </select><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Telefono:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        <label for="currentPassword">Antigua Contraseña:</label>
+        <input type="password" id="currentPassword" name="currentPassword" required><br>
+
+        <label for="newPassword">Nueva contraseña:</label>
+        <input type="password" id="newPassword" name="newPassword" required><br>
+
+        <label for="address">Direccion:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+
+        <label for="cardNumber">Targeta:</label>
+        <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br>
+
+        <input type="submit" value="Guardar Cambios">
+    </form>
+</body>
+</html>
